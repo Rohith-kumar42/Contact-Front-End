@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
     <style>
         body{
             background-color:#787878;
@@ -33,12 +35,29 @@
             margin-left: 30px;
             height: 80px;
             width:450px;
-            margin-bottom: 15px;
+            margin-bottom: 25px;
             border-bottom:1px solid #7a7a7a;
             border-end-start-radius: 20px;
           
             
         }
+        .contact-container:hover {
+            height: 100px;
+
+        }
+        .contact-container:hover .fa{
+            display: block;
+            margin-top: -10px;
+            transition: 0.5em; 
+
+        }
+        .contact-container:hover .message{
+            display: block;
+            margin-top: -50px;
+            margin-left: 190px;
+
+        }
+         
         .contact-container1 {
             margin-left: 30px;
             height: 80px;
@@ -67,7 +86,8 @@
             margin-left: 30px;
             margin-top:   2px;
             /*   :5px ; */
-            color: rgb(0, 199, 0);
+            color: rgb(255, 255, 255);
+            width: 35px;
         }
         .fas{
             padding-left: 10px;
@@ -76,13 +96,55 @@
             
         }
         .fa{
-            margin-left: 30px;
+            margin-left: 130px;
             margin-top: -150px;
-            background-color: transparent;
+            margin-bottom: 20px;
+            background-color: rgb(0, 225, 255);
             border: none;
+            height: 30px;
+            border-radius: 50%;
+            display: none;
+            
         }
+        .message{
+    background-color: transparent;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width:35px;
+    background-color: rgb(0, 225, 255);
+    border-radius: 50%;
+
+
+  }
+ 
+  .video{
+    margin-left: 250px;
+    color: #ffffff;
+    width: 35px;
+
+  }
+  .contact-container:hover .video{
+            display: block;
+            margin-top: -40px;
+            margin-left: 250px;
+
+        }
+        .info{
+    margin-left: 300px;
+    color: #ffffff;
+    width: 35px;
+
+  }
+  .contact-container:hover .info{
+            display: block;
+            margin-top: -50px;
+            margin-left: 310px;
+
+        }
+
         .fa:hover{
-            color: rgb(0, 199, 0);
+           
             cursor: pointer;
         }
        .search{
@@ -119,6 +181,51 @@
     margin-right: 10px;
     border-radius: 20px;
   }
+.contact-container1:hover{
+    height: 100px;
+}
+.contact-container1:hover .fa{
+            display: block;
+            margin-top: 0px;
+            transition: 0.5em; 
+            height: 30px;
+
+}
+.call1  {
+            margin-left: 30px;
+            margin-top:   2px;
+           
+            color: rgb(255, 255, 255);
+            width: 35px;
+        }
+.contact-container1:hover .call1{
+    display: block;
+    margin-top: 15px;
+    margin-left: -5px;
+    width: 32px;
+    font-size: 15px;
+}
+.contact-container1:hover .message{
+            display: block;
+            margin-top: -50px;
+            margin-left: 50px;
+            font-size: 15px;
+        }
+
+.contact-container1:hover .video{
+            display: block;
+            margin-top: -40px;
+            margin-left: 110px;
+            font-size: 15px;
+        }
+.contact-container1:hover .info{
+            display: block;
+            margin-top: -50px;
+            margin-left: 170px;
+            font-size: 15px;
+        }
+
+
     </style>
     <body>
         <div class="container">
@@ -131,213 +238,185 @@
         <DIV class="a1">
             <h2 class="a">A</h2>
             <div class="contact-container">
-                <img class="image" src="../rk.jpg" >
-                <h2 class="contact-info">AADHRASH
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2>
-               -->
-
+                <img class="image" src="../assets/rk.jpg" >
+                <h2 class="contact-info">AADHRASH</h2>
+                <button class="fa fa-phone call"></button> 
+                <button type="button" class="fa fa-comments message"></button>
+                <button type="button" class="fa fa-video-camera video"></button>  
+                <button type="button" class="fa fa-info-circle info"></button> 
             </div>
             <div class="contact-container1">
-                <img class="image" src="../rk.jpg" >
+                <img class="image" src="../assets/rk.jpg" >
                 <h2 class="contact-info">AFZAL
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2> -->
-              
+                    <button class="fa fa-phone call1"></button> 
+                    <button type="button" class="fa fa-comments message"></button>
+                    <button type="button" class="fa fa-video-camera video"></button>  
+                    <button type="button" class="fa fa-info-circle info"></button> 
 
             </div>
             <div class="contact-container1">
-                <img class="image" src="../rk.jpg" >
+                <img class="image" src="../assets/rk.jpg" >
                 <h2 class="contact-info">AJAY
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2>
-               -->
+                    <button class="fa fa-phone call1"></button> 
+                    <button type="button" class="fa fa-comments message"></button>
+                    <button type="button" class="fa fa-video-camera video"></button>  
+                    <button type="button" class="fa fa-info-circle info"></button> 
 
             </div> 
             <div class="contact-container1">
-                <img class="image" src="../rk.jpg" >
+                <img class="image" src="../assets/rk.jpg" >
                 <h2 class="contact-info">ARUN
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2>
-               -->
+                    <button class="fa fa-phone call1"></button> 
+                    <button type="button" class="fa fa-comments message"></button>
+                    <button type="button" class="fa fa-video-camera video"></button>  
+                    <button type="button" class="fa fa-info-circle info"></button> 
 
             </div> 
             <div class="contact-container1">
-                <img class="image" src="../rk.jpg" >
+                <img class="image" src="../assets/rk.jpg" >
                 <h2 class="contact-info">ASWATH
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2>
-               -->
+                    <button class="fa fa-phone call1"></button> 
+                    <button type="button" class="fa fa-comments message"></button>
+                    <button type="button" class="fa fa-video-camera video"></button>  
+                    <button type="button" class="fa fa-info-circle info"></button> 
 
             </div>
         </DIV> 
         <DIV class="a1">
             <h2 class="a">B</h2>
             <div class="contact-container">
-                <img class="image" src="../rk.jpg" >
-                <h2 class="contact-info">BADRI
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2>
-               -->
+                <img class="image" src="../assets/rk.jpg" >
+                <h2 class="contact-info">BALAJI</h2>
+                <button class="fa fa-phone call"></button> 
+                <button type="button" class="fa fa-comments message"></button>
+                <button type="button" class="fa fa-video-camera video"></button>  
+                <button type="button" class="fa fa-info-circle info"></button> 
+            </div>
+            <div class="contact-container1">
+                <img class="image" src="../assets/rk.jpg" >
+                <h2 class="contact-info">BALAJI1
+                    <button class="fa fa-phone call1"></button> 
+                    <button type="button" class="fa fa-comments message"></button>
+                    <button type="button" class="fa fa-video-camera video"></button>  
+                    <button type="button" class="fa fa-info-circle info"></button> 
 
             </div>
             <div class="contact-container1">
-                <img class="image" src="../rk.jpg" >
-                <h2 class="contact-info">BALAJI
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2> -->
-              
-
-            </div>
-            <div class="contact-container1">
-                <img class="image" src="../rk.jpg" >
+                <img class="image" src="../assets/rk.jpg" >
                 <h2 class="contact-info">BARATHI
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2>
-               -->
+                    <button class="fa fa-phone call1"></button> 
+                    <button type="button" class="fa fa-comments message"></button>
+                    <button type="button" class="fa fa-video-camera video"></button>  
+                    <button type="button" class="fa fa-info-circle info"></button> 
 
-            </div> 
+            </div>
             <div class="contact-container1">
-                <img class="image" src="../rk.jpg" >
-                <h2 class="contact-info">BALU
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2>
-               -->
+                <img class="image" src="../assets/rk.jpg" >
+                <h2 class="contact-info">BANU
+                    <button class="fa fa-phone call1"></button> 
+                    <button type="button" class="fa fa-comments message"></button>
+                    <button type="button" class="fa fa-video-camera video"></button>  
+                    <button type="button" class="fa fa-info-circle info"></button> 
 
-            </div> 
+            </div>
             <div class="contact-container1">
-                <img class="image" src="../rk.jpg" >
-                <h2 class="contact-info">BASKAR
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2>
-               -->
+                <img class="image" src="../assets/rk.jpg" >
+                <h2 class="contact-info">BAVESH
+                    <button class="fa fa-phone call1"></button> 
+                    <button type="button" class="fa fa-comments message"></button>
+                    <button type="button" class="fa fa-video-camera video"></button>  
+                    <button type="button" class="fa fa-info-circle info"></button> 
 
             </div>
         </DIV> 
         <DIV class="a1">
             <h2 class="a">C</h2>
             <div class="contact-container">
-                <img class="image" src="../rk.jpg" >
-                <h2 class="contact-info">CHANDRU
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2>
-               -->
-
+                <img class="image" src="../assets/rk.jpg" >
+                <h2 class="contact-info">CHANDRU</h2>
+                <button class="fa fa-phone call"></button> 
+                <button type="button" class="fa fa-comments message"></button>
+                <button type="button" class="fa fa-video-camera video"></button>  
+                <button type="button" class="fa fa-info-circle info"></button> 
             </div>
             <div class="contact-container1">
-                <img class="image" src="../rk.jpg" >
+                <img class="image" src="../assets/rk.jpg" >
                 <h2 class="contact-info">CHANDANA
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2> -->
-              
+                    <button class="fa fa-phone call1"></button> 
+                    <button type="button" class="fa fa-comments message"></button>
+                    <button type="button" class="fa fa-video-camera video"></button>  
+                    <button type="button" class="fa fa-info-circle info"></button> 
 
             </div>
             <div class="contact-container1">
-                <img class="image" src="../rk.jpg" >
+                <img class="image" src="../assets/rk.jpg" >
                 <h2 class="contact-info">CHITRA
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2>
-               -->
+                    <button class="fa fa-phone call1"></button> 
+                    <button type="button" class="fa fa-comments message"></button>
+                    <button type="button" class="fa fa-video-camera video"></button>  
+                    <button type="button" class="fa fa-info-circle info"></button> 
 
             </div> 
             <div class="contact-container1">
-                <img class="image" src="../rk.jpg" >
+                <img class="image" src="../assets/rk.jpg" >
                 <h2 class="contact-info">CM
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2>
-               -->
+                    <button class="fa fa-phone call1"></button> 
+                    <button type="button" class="fa fa-comments message"></button>
+                    <button type="button" class="fa fa-video-camera video"></button>  
+                    <button type="button" class="fa fa-info-circle info"></button> 
 
-            </div> 
+            </div>
             <div class="contact-container1">
-                <img class="image" src="../rk.jpg" >
+                <img class="image" src="../assets/rk.jpg" >
                 <h2 class="contact-info">COLLEGE
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2>
-               -->
+                    <button class="fa fa-phone call1"></button> 
+                    <button type="button" class="fa fa-comments message"></button>
+                    <button type="button" class="fa fa-video-camera video"></button>  
+                    <button type="button" class="fa fa-info-circle info"></button> 
 
             </div>
         </DIV>
         <DIV class="a1" style="margin-bottom: 30PX;">
             <h2 class="a">D</h2>
             <div class="contact-container">
-                <img class="image" src="../rk.jpg" >
-                <h2 class="contact-info">DHANABAL
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2>
-               -->
-
+                <img class="image" src="../assets/rk.jpg" >
+                <h2 class="contact-info">DHANABAL</h2>
+                <button class="fa fa-phone call"></button> 
+                <button type="button" class="fa fa-comments message"></button>
+                <button type="button" class="fa fa-video-camera video"></button>  
+                <button type="button" class="fa fa-info-circle info"></button> 
             </div>
-            <div class="contact-container1">
-                <img class="image" src="../rk.jpg" >
-                <h2 class="contact-info">DHANUMALAYAN
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2> -->
-              
-
+            <div class="contact-container">
+                <img class="image" src="../assets/rk.jpg" >
+                <h2 class="contact-info">DHANUMALAYAN</h2>
+                <button class="fa fa-phone call"></button> 
+                <button type="button" class="fa fa-comments message"></button>
+                <button type="button" class="fa fa-video-camera video"></button>  
+                <button type="button" class="fa fa-info-circle info"></button> 
             </div>
-            <div class="contact-container1">
-                <img class="image" src="../rk.jpg" >
-                <h2 class="contact-info">DHARSHAN
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2>
-               -->
-
-            </div> 
-            <div class="contact-container1">
-                <img class="image" src="../rk.jpg" >
-                <h2 class="contact-info">DIVYA PRAKASH
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2>
-               -->
-
-            </div> 
-            <div class="contact-container1">
-                <img class="image" src="../rk.jpg" >
-                <h2 class="contact-info">DHARSHUN
-                <!-- <button class="fa fa-phone call"></button>
-            <button class="fas fa-comments" style="background-color: transparent;color: white;"></button></h2> -->
-                    <!-- <span class="fa fa-phone call"
-                    style='font-size:24px' class='fas'><span style="color: transparent;">...</span><span style="color: white;">&#xf086;</span></span></h2>
-               -->
-
+            <div class="contact-container">
+                <img class="image" src="../assets/rk.jpg" >
+                <h2 class="contact-info">DHARSHA</h2>
+                <button class="fa fa-phone call"></button> 
+                <button type="button" class="fa fa-comments message"></button>
+                <button type="button" class="fa fa-video-camera video"></button>  
+                <button type="button" class="fa fa-info-circle info"></button> 
+            </div>
+            <div class="contact-container">
+                <img class="image" src="../assets/rk.jpg" >
+                <h2 class="contact-info">DIVYA PRAKASH</h2>
+                <button class="fa fa-phone call"></button> 
+                <button type="button" class="fa fa-comments message"></button>
+                <button type="button" class="fa fa-video-camera video"></button>  
+                <button type="button" class="fa fa-info-circle info"></button> 
+            </div>
+            <div class="contact-container">
+                <img class="image" src="../assets/rk.jpg" >
+                <h2 class="contact-info">DJ</h2>
+                <button class="fa fa-phone call"></button> 
+                <button type="button" class="fa fa-comments message"></button>
+                <button type="button" class="fa fa-video-camera video"></button>  
+                <button type="button" class="fa fa-info-circle info"></button> 
             </div>
         </DIV>
         </div>
